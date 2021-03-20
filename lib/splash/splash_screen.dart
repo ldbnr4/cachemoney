@@ -21,18 +21,25 @@ class _SplashScreenState extends State<SplashScreen> {
             children: [
               Image.asset('assets/images/icons/logo.jpeg'),
               Center(
-                children: [
-                  Text(
-                    'Keep your head up, keep your bread up',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 35, color: Colors.white),
+                child: new RichText(
+                  text: new TextSpan(
+                    // Note: Styles for TextSpans must be explicitly defined.
+                    // Child text spans will inherit styles from parent
+                    style: new TextStyle(
+                      fontSize: 14.0,
+                      color: Colors.black,
+                    ),
+                    children: <TextSpan>[
+                      new TextSpan(text: 'Hello'),
+                      new TextSpan(text: 'World', style: new TextStyle(fontWeight: FontWeight.bold)),
+                    ],
                   ),
-                  Text(
-                    'Keep your head up, keep your bread up',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 35, color: Colors.green),
-                  ),
-                ],
+                ),
+                // child: Text(
+                //   'Keep your head up, keep your bread up',
+                //   textAlign: TextAlign.center,
+                //   style: TextStyle(fontSize: 35, color: Colors.white),
+                // ),
               ),
               SizedBox(
                 height: 10,
@@ -69,7 +76,7 @@ class _SplashScreenState extends State<SplashScreen> {
                       borderRadius: BorderRadius.circular(30)),
                   child: Center(
                     child: Text(
-                      "Invest",
+                      "In",
                       style: TextStyle(color: Colors.white, fontSize: 20),
                     ),
                   ),
