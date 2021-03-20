@@ -19,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Image.asset('assets/images/icons/logo.jpeg'),
+              Image.asset('assets/images/icons/cachemoney-light.png'),
               Center(
                 child: new RichText(
                   text: new TextSpan(
@@ -32,7 +32,7 @@ class _SplashScreenState extends State<SplashScreen> {
                     children: <TextSpan>[
                       new TextSpan(text: 'Keep your '),
                       new TextSpan(text: 'head ', style: new TextStyle(fontWeight: FontWeight.bold, color: Colors.amber)),
-                      new TextSpan(text: 'up'),
+                      new TextSpan(text: 'up,'),
                       new TextSpan(text: '\n'),
                       new TextSpan(text: 'Keep your '),
                       new TextSpan(text: 'bread ', style: new TextStyle(fontWeight: FontWeight.bold, color: Colors.green)),
@@ -40,11 +40,6 @@ class _SplashScreenState extends State<SplashScreen> {
                     ],
                   ),
                 ),
-                // child: Text(
-                //   'Keep your head up, keep your bread up',
-                //   textAlign: TextAlign.center,
-                //   style: TextStyle(fontSize: 35, color: Colors.white),
-                // ),
               ),
               SizedBox(
                 height: 10,
