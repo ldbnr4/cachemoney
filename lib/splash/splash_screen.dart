@@ -30,6 +30,9 @@ class _SplashScreenState extends State<SplashScreen> {
                 height: 100,
               ),
               Image.asset('assets/images/icons/cachemoney-light.png'),
+              SizedBox(
+                height: 20,
+              ),
               Center(
                 child: new RichText(
                   text: new TextSpan(
