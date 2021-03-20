@@ -22,8 +22,7 @@ class _SplashScreenState extends State<SplashScreen> {
         backgroundColor: Colors.black,
         body: SingleChildScrollView(
           physics: AlwaysScrollableScrollPhysics(),
-          child: 
-          Column(
+          child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -62,11 +61,11 @@ class _SplashScreenState extends State<SplashScreen> {
               SizedBox(
                 height: 20,
               ),
-              GestureDetector(
-                onTap: () {
-                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => SignIn()));
-                },
-              )
+              //   GestureDetector(
+              //     onTap: () {
+              //       Navigator.of(context).push(MaterialPageRoute(builder: (context) => SignIn()));
+              //     },
+              //   )
             ],
           ),
         ),
