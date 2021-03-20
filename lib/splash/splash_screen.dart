@@ -22,9 +22,14 @@ class _SplashScreenState extends State<SplashScreen> {
               Image.asset('assets/images/icons/logo.jpeg'),
               Center(
                 child: Text(
-                  'Keep your head up, keep your bread up dog',
+                  'Keep your head up, keep your bread up',
                   textAlign: TextAlign.center,
                   style: TextStyle(fontSize: 35, color: Colors.white),
+                ),
+                Text(
+                  'Keep your head up, keep your bread up',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 35, color: Colors.green),
                 ),
               ),
               SizedBox(
