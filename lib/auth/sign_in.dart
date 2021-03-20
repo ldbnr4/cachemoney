@@ -124,8 +124,8 @@ class _SignInState extends State<SignIn> {
                               suffixIcon: IconButton(
                                 onPressed: () => _toggle(),
                                 icon: Icon(
-                                  FontAwesomeIcons.eyeSlash,
-                                  color: Colors.grey,
+                                  _obscureText ? FontAwesomeIcons.eyeSlash : FontAwesomeIcons.eye,
+                                  color: _obscureText ? Colors.grey : Colors.black,
                                 ),
                               ),
                               hintStyle: TextStyle(color: Colors.black87)),
