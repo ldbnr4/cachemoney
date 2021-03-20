@@ -21,16 +21,18 @@ class _SplashScreenState extends State<SplashScreen> {
             children: [
               Image.asset('assets/images/icons/logo.jpeg'),
               Center(
-                child: Text(
-                  'Keep your head up, keep your bread up',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 35, color: Colors.white),
-                ),
-                Text(
-                  'Keep your head up, keep your bread up',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 35, color: Colors.green),
-                ),
+                children: [
+                  Text(
+                    'Keep your head up, keep your bread up',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 35, color: Colors.white),
+                  ),
+                  Text(
+                    'Keep your head up, keep your bread up',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 35, color: Colors.green),
+                  ),
+                ],
               ),
               SizedBox(
                 height: 10,
