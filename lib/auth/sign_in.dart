@@ -83,7 +83,6 @@ class _SignInState extends State<SignIn> {
                         ),
                         Expanded(
                             child: TextFormField(
-                          focusNode: focusNode,
                           cursorColor: Colors.black,
                           keyboardType: TextInputType.text,
                           decoration: new InputDecoration(border: InputBorder.none, focusedBorder: InputBorder.none, enabledBorder: InputBorder.none, errorBorder: InputBorder.none, disabledBorder: InputBorder.none, contentPadding: EdgeInsets.only(left: 15, bottom: 11, top: 11, right: 15), hintText: emailHintText, hintStyle: TextStyle(color: Colors.black87)),
