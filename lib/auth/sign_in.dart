@@ -121,15 +121,12 @@ class _SignInState extends State<SignIn> {
                               disabledBorder: InputBorder.none,
                               contentPadding: EdgeInsets.only(top: 15, right: 15),
                               //   hintText: "********",
-                              suffixIconConstraints: BoxConstraints(
-                                maxWidth: 2,
-                                maxHeight: 2,
-                              ),
                               suffixIcon: IconButton(
                                 onPressed: () => _toggle(),
                                 icon: Icon(
                                   _obscureText ? FontAwesomeIcons.eyeSlash : FontAwesomeIcons.eye,
                                   color: _obscureText ? Colors.grey : Colors.black,
+                                  size: 10,
                                 ),
                               ),
                               hintStyle: TextStyle(color: Colors.black87)),
