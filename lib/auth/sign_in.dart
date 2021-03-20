@@ -10,7 +10,7 @@ class SignIn extends StatefulWidget {
 
 class _SignInState extends State<SignIn> {
   FocusNode focusNode = FocusNode();
-  String emailHintText = 'email address';
+  String emailHintText = 'email@example.com';
   @override
   void initState() {
     // TODO: implement initState
@@ -19,7 +19,7 @@ class _SignInState extends State<SignIn> {
       if (focusNode.hasFocus) {
         emailHintText = '';
       } else {
-        emailHintText = 'email@example.com'';
+        emailHintText = 'email@example.com';
       }
       setState(() {});
     });
@@ -87,7 +87,7 @@ class _SignInState extends State<SignIn> {
                         ),
                         Expanded(
                             child: TextFormField(
-                                focusNode: focusNode,
+                          focusNode: focusNode,
                           cursorColor: Colors.black,
                           keyboardType: TextInputType.text,
                           decoration: new InputDecoration(border: InputBorder.none, focusedBorder: InputBorder.none, enabledBorder: InputBorder.none, errorBorder: InputBorder.none, disabledBorder: InputBorder.none, contentPadding: EdgeInsets.only(left: 15, bottom: 11, top: 11, right: 15), hintText: emailHintText, hintStyle: TextStyle(color: Colors.black87)),
@@ -117,8 +117,7 @@ class _SignInState extends State<SignIn> {
                             child: TextFormField(
                           cursorColor: Colors.black,
                           keyboardType: TextInputType.text,
-
-                              obscureText: true,
+                          obscureText: true,
                           decoration: new InputDecoration(
                               border: InputBorder.none,
                               focusedBorder: InputBorder.none,
