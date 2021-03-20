@@ -56,10 +56,13 @@ class _SplashScreenState extends State<SplashScreen> {
                   height: 10,
                 ),
                 Center(
-                  child: Text(
-                    'Best way to invest & save money for the future just by using your phone',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 15, color: Colors.grey.shade600),
+                  child: Padding(
+                    padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+                    child: Text(
+                      'Best way to invest & save money for the future just by using your phone',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(fontSize: 15, color: Colors.grey.shade600),
+                    ),
                   ),
                 ),
                 SizedBox(
