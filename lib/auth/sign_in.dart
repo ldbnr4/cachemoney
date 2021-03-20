@@ -124,7 +124,7 @@ class _SignInState extends State<SignIn> {
                               suffixIcon: InkWell(
                                 // iconSize: 30,
                                 // padding: new EdgeInsets.all(0.0),
-                                highlightColor: Color.transparent,
+                                highlightColor: Colors.transparent,
                                 onTap: () => _toggle(),
                                 child: Icon(
                                   _obscureText ? FontAwesomeIcons.eyeSlash : FontAwesomeIcons.eye,
