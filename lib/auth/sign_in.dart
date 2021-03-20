@@ -117,6 +117,8 @@ class _SignInState extends State<SignIn> {
                             child: TextFormField(
                           cursorColor: Colors.black,
                           keyboardType: TextInputType.text,
+
+                              obscureText: true,
                           decoration: new InputDecoration(
                               border: InputBorder.none,
                               focusedBorder: InputBorder.none,
@@ -125,7 +127,6 @@ class _SignInState extends State<SignIn> {
                               disabledBorder: InputBorder.none,
                               contentPadding: EdgeInsets.only(top: 15, right: 15),
                               hintText: "********",
-                              obscureText: true,
                               suffixIcon: Icon(
                                 FontAwesomeIcons.eye,
                                 color: Colors.grey,
