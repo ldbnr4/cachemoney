@@ -27,7 +27,7 @@ class _SplashScreenState extends State<SplashScreen> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               SizedBox(
-                height: 20,
+                height: 100,
               ),
               Image.asset('assets/images/icons/cachemoney-light.png'),
               Center(
