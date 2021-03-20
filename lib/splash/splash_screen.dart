@@ -27,7 +27,7 @@ class _SplashScreenState extends State<SplashScreen> {
                     // Child text spans will inherit styles from parent
                     style: new TextStyle(
                       fontSize: 14.0,
-                      color: Colors.black,
+                      color: Colors.white,
                     ),
                     children: <TextSpan>[
                       new TextSpan(text: 'Hello'),
