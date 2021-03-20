@@ -13,22 +13,23 @@ class _SignInState extends State<SignIn> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.white,
-          leading: Icon(
-            Icons.clear,
-            color: Colors.grey,
-          ),
-          actions: [
-            Padding(
-              padding: const EdgeInsets.only(right: 10),
-              child: Icon(
-                FontAwesomeIcons.solidQuestionCircle,
-                color: Colors.grey,
-              ),
-            )
-          ],
-        ),
+        // appBar: AppBar(
+        //   backgroundColor: Colors.white,
+        //   leading: Icon(
+        //     Icons.clear,
+        //     color: Colors.grey,
+        //   ),
+        //   actions: [
+        //     Padding(
+        //       padding: const EdgeInsets.only(right: 10),
+        //       child: Icon(
+        //         FontAwesomeIcons.solidQuestionCircle,
+        //         color: Colors.grey,
+        //       ),
+        //     )
+        //   ],
+        // ),
+        backgroundColor: Colors.black,
         body: SingleChildScrollView(
           physics: AlwaysScrollableScrollPhysics(),
           child: Padding(
@@ -39,28 +40,25 @@ class _SignInState extends State<SignIn> {
               children: [
                 Text(
                   'Welcome back!',
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 25,
-                      fontWeight: FontWeight.bold),
+                  style: TextStyle(color: Colors.black, fontSize: 25, fontWeight: FontWeight.bold),
                 ),
-                SizedBox(
-                  height: 10,
-                ),
-                Text(
-                  'Sign in to your account',
-                  style: TextStyle(
-                    color: Colors.grey.shade800,
-                    fontSize: 16,
-                  ),
-                ),
+                // SizedBox(
+                //   height: 10,
+                // ),
+                // Text(
+                //   'Sign in to your account',
+                //   style: TextStyle(
+                //     color: Colors.grey.shade800,
+                //     fontSize: 16,
+                //   ),
+                // ),
                 SizedBox(
                   height: 20,
                 ),
                 Container(
                     height: 50,
                     decoration: BoxDecoration(
-                        color: Colors.grey.shade300,
+                        // color: Colors.grey.shade300,
                         borderRadius: BorderRadius.circular(15)),
                     child: Row(
                       children: [
@@ -79,16 +77,7 @@ class _SignInState extends State<SignIn> {
                             child: TextFormField(
                           cursorColor: Colors.black,
                           keyboardType: TextInputType.text,
-                          decoration: new InputDecoration(
-                              border: InputBorder.none,
-                              focusedBorder: InputBorder.none,
-                              enabledBorder: InputBorder.none,
-                              errorBorder: InputBorder.none,
-                              disabledBorder: InputBorder.none,
-                              contentPadding: EdgeInsets.only(
-                                  left: 15, bottom: 11, top: 11, right: 15),
-                              hintText: "justin_86@example.com",
-                              hintStyle: TextStyle(color: Colors.black87)),
+                          decoration: new InputDecoration(border: InputBorder.none, focusedBorder: InputBorder.none, enabledBorder: InputBorder.none, errorBorder: InputBorder.none, disabledBorder: InputBorder.none, contentPadding: EdgeInsets.only(left: 15, bottom: 11, top: 11, right: 15), hintText: "justin_86@example.com", hintStyle: TextStyle(color: Colors.black87)),
                         )),
                       ],
                     )),
@@ -97,9 +86,7 @@ class _SignInState extends State<SignIn> {
                 ),
                 Container(
                     height: 50,
-                    decoration: BoxDecoration(
-                        color: Colors.grey.shade300,
-                        borderRadius: BorderRadius.circular(15)),
+                    decoration: BoxDecoration(color: Colors.grey.shade300, borderRadius: BorderRadius.circular(15)),
                     child: Row(
                       children: [
                         Padding(
@@ -123,8 +110,7 @@ class _SignInState extends State<SignIn> {
                               enabledBorder: InputBorder.none,
                               errorBorder: InputBorder.none,
                               disabledBorder: InputBorder.none,
-                              contentPadding:
-                                  EdgeInsets.only(top: 15, right: 15),
+                              contentPadding: EdgeInsets.only(top: 15, right: 15),
                               hintText: "********",
                               suffixIcon: Icon(
                                 FontAwesomeIcons.eye,
@@ -148,15 +134,12 @@ class _SignInState extends State<SignIn> {
                 ),
                 GestureDetector(
                   onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => HomeScreen()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));
                   },
                   child: Container(
                     height: 50,
                     width: MediaQuery.of(context).size.width,
-                    decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(10)),
+                    decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(10)),
                     child: Center(
                       child: Text(
                         'Continue',
@@ -181,8 +164,7 @@ class _SignInState extends State<SignIn> {
                     ),
                     GestureDetector(
                       onTap: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => SignUp()));
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => SignUp()));
                       },
                       child: Text(
                         'Sign Up?',
