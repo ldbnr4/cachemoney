@@ -122,7 +122,7 @@ class _SignInState extends State<SignIn> {
                               contentPadding: EdgeInsets.only(top: 15, right: 15),
                               //   hintText: "********",
                               suffixIcon: IconButton(
-                                // onPressed: () => _controller.clear(),
+                                onPressed: () => _toggle(),
                                 icon: Icon(
                                   FontAwesomeIcons.eyeSlash,
                                   color: Colors.grey,
