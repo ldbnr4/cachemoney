@@ -22,7 +22,8 @@ class _SplashScreenState extends State<SplashScreen> {
         backgroundColor: Colors.black,
         body: SingleChildScrollView(
           physics: AlwaysScrollableScrollPhysics(),
-          child: Column(
+          child: 
+          Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -65,29 +66,6 @@ class _SplashScreenState extends State<SplashScreen> {
                 onTap: () {
                   Navigator.of(context).push(MaterialPageRoute(builder: (context) => SignIn()));
                 },
-                child: Container(
-                  height: 100,
-                  width: 120,
-                  decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                        begin: const FractionalOffset(0.0, 1.0),
-                        end: const FractionalOffset(1.0, 0.0),
-                        // stops: [0.2, 0.5, 0.7, 0.9],
-                        colors: [
-                          Color(0xff8AF2FD),
-                          Color(0xff5BC7B1),
-                          // Color(0xff7DCDE1),
-                          Color(0xff148399),
-                        ],
-                      ),
-                      borderRadius: BorderRadius.circular(30)),
-                  child: Center(
-                    child: Text(
-                      "In",
-                      style: TextStyle(color: Colors.white, fontSize: 20),
-                    ),
-                  ),
-                ),
               )
             ],
           ),
