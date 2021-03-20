@@ -31,7 +31,8 @@ class _SplashScreenState extends State<SplashScreen> {
                     ),
                     children: <TextSpan>[
                       new TextSpan(text: 'Keep your '),
-                      new TextSpan(text: 'head', style: new TextStyle(fontWeight: FontWeight.bold, color: Colors.green)),
+                      new TextSpan(text: 'head', style: new TextStyle(fontWeight: FontWeight.bold, color: Colors.gold)),
+                      new TextSpan(text: 'Keep your '),
                     ],
                   ),
                 ),
