@@ -59,7 +59,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   child: Padding(
                     padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
                     child: Text(
-                      'Best way to invest & save money for the future just by using your phone',
+                      'A simple and easy way for you to invest for the future and earn passive income!',
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 15, color: Colors.grey.shade600),
                     ),
