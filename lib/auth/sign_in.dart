@@ -121,15 +121,15 @@ class _SignInState extends State<SignIn> {
                 SizedBox(
                   height: 10,
                 ),
-                Align(
-                    alignment: Alignment.centerRight,
-                    child: Text(
-                      'Forget password?',
-                      style: TextStyle(color: Colors.black87),
-                    )),
-                SizedBox(
-                  height: 10,
-                ),
+                // Align(
+                //     alignment: Alignment.centerRight,
+                //     child: Text(
+                //       'Forget password?',
+                //       style: TextStyle(color: Colors.black87),
+                //     )),
+                // SizedBox(
+                //   height: 10,
+                // ),
                 GestureDetector(
                   onTap: () {
                     Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));
@@ -155,7 +155,7 @@ class _SignInState extends State<SignIn> {
                   children: [
                     Text(
                       'Don\'t have an account?',
-                      style: TextStyle(color: Colors.black87),
+                      style: TextStyle(color: color: Colors.white),
                     ),
                     SizedBox(
                       width: 5,
@@ -167,7 +167,7 @@ class _SignInState extends State<SignIn> {
                       child: Text(
                         'Sign Up?',
                         style: TextStyle(
-                          color: Colors.black87,
+                          color: Colors.white,
                           fontSize: 16,
                           decoration: TextDecoration.underline,
                         ),
