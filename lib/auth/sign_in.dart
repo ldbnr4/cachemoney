@@ -19,7 +19,7 @@ class _SignInState extends State<SignIn> {
       if (focusNode.hasFocus) {
         emailHintText = '';
       } else {
-        emailHintText = 'Hello , iam Hint';
+        emailHintText = 'email@example.com'';
       }
       setState(() {});
     });
@@ -76,9 +76,18 @@ class _SignInState extends State<SignIn> {
                     decoration: BoxDecoration(/*color: Colors.grey.shade300,*/ borderRadius: BorderRadius.circular(15)),
                     child: Row(
                       children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 20),
+                          child: Text(
+                            'Email',
+                          ),
+                        ),
+                        SizedBox(
+                          width: 20,
+                        ),
                         Expanded(
                             child: TextFormField(
-                          focusNode: focusNode,
+                                focusNode: focusNode,
                           cursorColor: Colors.black,
                           keyboardType: TextInputType.text,
                           decoration: new InputDecoration(border: InputBorder.none, focusedBorder: InputBorder.none, enabledBorder: InputBorder.none, errorBorder: InputBorder.none, disabledBorder: InputBorder.none, contentPadding: EdgeInsets.only(left: 15, bottom: 11, top: 11, right: 15), hintText: emailHintText, hintStyle: TextStyle(color: Colors.black87)),
@@ -116,6 +125,7 @@ class _SignInState extends State<SignIn> {
                               disabledBorder: InputBorder.none,
                               contentPadding: EdgeInsets.only(top: 15, right: 15),
                               hintText: "********",
+                              obscureText: true,
                               suffixIcon: Icon(
                                 FontAwesomeIcons.eye,
                                 color: Colors.grey,
