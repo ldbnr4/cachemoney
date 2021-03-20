@@ -29,7 +29,7 @@ class _SignInState extends State<SignIn> {
         //     )
         //   ],
         // ),
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.grey.shade300,
         body: SingleChildScrollView(
           physics: AlwaysScrollableScrollPhysics(),
           child: Padding(
@@ -40,7 +40,7 @@ class _SignInState extends State<SignIn> {
               children: [
                 Text(
                   'Welcome back!',
-                  style: TextStyle(color: Colors.white, fontSize: 25, fontWeight: FontWeight.bold),
+                  style: TextStyle(color: Colors.black, fontSize: 25, fontWeight: FontWeight.bold),
                 ),
                 // SizedBox(
                 //   height: 10,
@@ -57,7 +57,7 @@ class _SignInState extends State<SignIn> {
                 ),
                 Container(
                     height: 50,
-                    decoration: BoxDecoration(color: Colors.grey.shade300, borderRadius: BorderRadius.circular(15)),
+                    decoration: BoxDecoration(/*color: Colors.grey.shade300,*/ borderRadius: BorderRadius.circular(15)),
                     child: Row(
                       children: [
                         Padding(
@@ -84,7 +84,7 @@ class _SignInState extends State<SignIn> {
                 ),
                 Container(
                     height: 50,
-                    decoration: BoxDecoration(color: Colors.grey.shade300, borderRadius: BorderRadius.circular(15)),
+                    decoration: BoxDecoration(/*color: Colors.grey.shade300,*/ borderRadius: BorderRadius.circular(15)),
                     child: Row(
                       children: [
                         Padding(
