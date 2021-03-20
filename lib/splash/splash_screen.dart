@@ -26,6 +26,9 @@ class _SplashScreenState extends State<SplashScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              SizedBox(
+                height: 20,
+              ),
               Image.asset('assets/images/icons/cachemoney-light.png'),
               Center(
                 child: new RichText(
@@ -64,34 +67,6 @@ class _SplashScreenState extends State<SplashScreen> {
               SizedBox(
                 height: 20,
               ),
-              GestureDetector(
-                onTap: () {
-                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => SignIn()));
-                },
-                child: Container(
-                  height: 100,
-                  width: 120,
-                  decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                        begin: const FractionalOffset(0.0, 1.0),
-                        end: const FractionalOffset(1.0, 0.0),
-                        // stops: [0.2, 0.5, 0.7, 0.9],
-                        colors: [
-                          Color(0xff8AF2FD),
-                          Color(0xff5BC7B1),
-                          // Color(0xff7DCDE1),
-                          Color(0xff148399),
-                        ],
-                      ),
-                      borderRadius: BorderRadius.circular(30)),
-                  child: Center(
-                    child: Text(
-                      "Start",
-                      style: TextStyle(color: Colors.white, fontSize: 20),
-                    ),
-                  ),
-                ),
-              )
             ],
           ),
         ),
