@@ -22,7 +22,7 @@ class _SplashScreenState extends State<SplashScreen> {
               Image.asset('assets/images/icons/logo.jpeg'),
               Center(
                 child: Text(
-                  'Simple way to invest your money for the future',
+                  'Keep your head up, keep your bread up',
                   textAlign: TextAlign.center,
                   style: TextStyle(fontSize: 35, color: Colors.white),
                 ),
@@ -42,8 +42,7 @@ class _SplashScreenState extends State<SplashScreen> {
               ),
               GestureDetector(
                 onTap: () {
-                  Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) => SignIn()));
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => SignIn()));
                 },
                 child: Container(
                   height: 100,
