@@ -121,11 +121,13 @@ class _SignInState extends State<SignIn> {
                               disabledBorder: InputBorder.none,
                               contentPadding: EdgeInsets.only(top: 15, right: 15),
                               //   hintText: "********",
-                              suffixIcon: Icon(
+                              suffixIcon: IconButton(
+    //   onPressed: () => _controller.clear(),
+      icon: Icon(
                                 FontAwesomeIcons.eyeSlash,
                                 color: Colors.grey,
-                                onPressed: _toggle,
                               ),
+                              
                               hintStyle: TextStyle(color: Colors.black87)),
                         )),
                       ],
