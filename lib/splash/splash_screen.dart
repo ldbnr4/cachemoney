@@ -33,8 +33,7 @@ class _SplashScreenState extends State<SplashScreen> {
                       new TextSpan(text: 'Keep your '),
                       new TextSpan(text: 'head ', style: new TextStyle(fontWeight: FontWeight.bold, color: Colors.amber)),
                       new TextSpan(text: 'up'),
-                    ],
-                    <TextSpan>[
+                      new TextSpan(text: '\n'),
                       new TextSpan(text: 'Keep your '),
                       new TextSpan(text: 'bread ', style: new TextStyle(fontWeight: FontWeight.bold, color: Colors.green)),
                       new TextSpan(text: 'up'),
