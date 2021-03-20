@@ -98,7 +98,7 @@ class _SignInState extends State<SignIn> {
                     child: Row(
                       children: [
                         Padding(
-                          padding: const EdgeInsets.only(left: 10),
+                          padding: const EdgeInsets.only(left: 20),
                           child: Text(
                             'Password',
                           ),
@@ -119,6 +119,7 @@ class _SignInState extends State<SignIn> {
                               enabledBorder: InputBorder.none,
                               errorBorder: InputBorder.none,
                               disabledBorder: InputBorder.none,
+                              padding: EdgeInsets.only(top: 15, right: 15),
                               contentPadding: EdgeInsets.only(top: 15, right: 15),
                               //   hintText: "********",
                               suffixIcon: IconButton(
