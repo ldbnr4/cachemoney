@@ -62,7 +62,7 @@ class _SplashScreenState extends State<SplashScreen> {
                       borderRadius: BorderRadius.circular(30)),
                   child: Center(
                     child: Text(
-                      "Start",
+                      "Invest",
                       style: TextStyle(color: Colors.white, fontSize: 20),
                     ),
                   ),
