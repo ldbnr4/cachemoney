@@ -119,11 +119,11 @@ class _SignInState extends State<SignIn> {
                               enabledBorder: InputBorder.none,
                               errorBorder: InputBorder.none,
                               disabledBorder: InputBorder.none,
-                              padding: EdgeInsets.only(top: 15, right: 15),
                               contentPadding: EdgeInsets.only(top: 15, right: 15),
                               //   hintText: "********",
                               suffixIcon: IconButton(
-                                // padding: EdgeInsets.only(left: 20, right: 20),
+                                padding: EdgeInsets.zero,
+                                constraints: BoxConstraints(),
                                 onPressed: () => _toggle(),
                                 icon: Icon(
                                   _obscureText ? FontAwesomeIcons.eyeSlash : FontAwesomeIcons.eye,
