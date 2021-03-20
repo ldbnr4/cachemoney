@@ -40,7 +40,7 @@ class _SignInState extends State<SignIn> {
               children: [
                 Text(
                   'Welcome back!',
-                  style: TextStyle(color: Colors.black, fontSize: 25, fontWeight: FontWeight.bold),
+                  style: TextStyle(color: Colors.grey.shade800, fontSize: 25, fontWeight: FontWeight.bold),
                 ),
                 // SizedBox(
                 //   height: 10,
