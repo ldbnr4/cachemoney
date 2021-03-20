@@ -125,9 +125,9 @@ class _SignInState extends State<SignIn> {
                                 iconSize: 30,
                                 onPressed: () => _toggle(),
                                 icon: Icon(
-                                    size: 30
                                   _obscureText ? FontAwesomeIcons.eyeSlash : FontAwesomeIcons.eye,
                                   color: _obscureText ? Colors.grey : Colors.black,
+                                  size: 30,
                                 ),
                               ),
                               hintStyle: TextStyle(color: Colors.black87)),
