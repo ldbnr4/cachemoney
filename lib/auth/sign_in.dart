@@ -9,6 +9,22 @@ class SignIn extends StatefulWidget {
 }
 
 class _SignInState extends State<SignIn> {
+  FocusNode focusNode = FocusNode();
+  String emailHintText = 'email address';
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    focusNode.addListener(() {
+      if (focusNode.hasFocus) {
+        emailHintText = '';
+      } else {
+        emailHintText = 'Hello , iam Hint';
+      }
+      setState(() {});
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -60,22 +76,12 @@ class _SignInState extends State<SignIn> {
                     decoration: BoxDecoration(/*color: Colors.grey.shade300,*/ borderRadius: BorderRadius.circular(15)),
                     child: Row(
                       children: [
-                        Padding(
-                          padding: const EdgeInsets.only(left: 20),
-                          child: Text(
-                            'Email',
-                          ),
-                        ),
-                        SizedBox(
-                          width: 20,
-                        ),
                         Expanded(
-                            // height: 50, width: 200,
-
                             child: TextFormField(
+                          focusNode: focusNode,
                           cursorColor: Colors.black,
                           keyboardType: TextInputType.text,
-                          decoration: new InputDecoration(border: InputBorder.none, focusedBorder: InputBorder.none, enabledBorder: InputBorder.none, errorBorder: InputBorder.none, disabledBorder: InputBorder.none, contentPadding: EdgeInsets.only(left: 15, bottom: 11, top: 11, right: 15), hintText: "justin_86@example.com", hintStyle: TextStyle(color: Colors.black87)),
+                          decoration: new InputDecoration(border: InputBorder.none, focusedBorder: InputBorder.none, enabledBorder: InputBorder.none, errorBorder: InputBorder.none, disabledBorder: InputBorder.none, contentPadding: EdgeInsets.only(left: 15, bottom: 11, top: 11, right: 15), hintText: emailHintText, hintStyle: TextStyle(color: Colors.black87)),
                         )),
                       ],
                     )),
