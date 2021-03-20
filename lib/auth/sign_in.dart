@@ -122,8 +122,8 @@ class _SignInState extends State<SignIn> {
                               contentPadding: EdgeInsets.only(top: 15, right: 15),
                               //   hintText: "********",
                               suffixIconConstraints: BoxConstraints(
-                                minWidth: 2,
-                                minHeight: 2,
+                                maxWidth: 2,
+                                maxHeight: 2,
                               ),
                               suffixIcon: IconButton(
                                 onPressed: () => _toggle(),
