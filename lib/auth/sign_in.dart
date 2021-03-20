@@ -9,19 +9,15 @@ class SignIn extends StatefulWidget {
 }
 
 class _SignInState extends State<SignIn> {
-  FocusNode focusNode = FocusNode();
-  String emailHintText = 'email@example.com';
-  @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-    focusNode.addListener(() {
-      if (focusNode.hasFocus) {
-        emailHintText = '';
-      } else {
-        emailHintText = 'email@example.com';
-      }
-      setState(() {});
+  // Initially password is obscure
+  bool _obscureText = true;
+
+  String _password;
+
+  // Toggles the password show status
+  void _toggle() {
+    setState(() {
+      _obscureText = !_obscureText;
     });
   }
 
@@ -117,7 +113,7 @@ class _SignInState extends State<SignIn> {
                             child: TextFormField(
                           cursorColor: Colors.black,
                           keyboardType: TextInputType.text,
-                          obscureText: true,
+                          obscureText: _obscureText,
                           decoration: new InputDecoration(
                               border: InputBorder.none,
                               focusedBorder: InputBorder.none,
@@ -125,10 +121,11 @@ class _SignInState extends State<SignIn> {
                               errorBorder: InputBorder.none,
                               disabledBorder: InputBorder.none,
                               contentPadding: EdgeInsets.only(top: 15, right: 15),
-                              hintText: "********",
+                              //   hintText: "********",
                               suffixIcon: Icon(
-                                FontAwesomeIcons.eye,
+                                FontAwesomeIcons.eyeSlash,
                                 color: Colors.grey,
+                                onPressed: _toggle,
                               ),
                               hintStyle: TextStyle(color: Colors.black87)),
                         )),
@@ -171,7 +168,7 @@ class _SignInState extends State<SignIn> {
                   children: [
                     Text(
                       'Don\'t have an account?',
-                      style: TextStyle(color: Colors.white),
+                      style: TextStyle(color: Colors.black),
                     ),
                     SizedBox(
                       width: 5,
@@ -183,7 +180,7 @@ class _SignInState extends State<SignIn> {
                       child: Text(
                         'Sign Up?',
                         style: TextStyle(
-                          color: Colors.white,
+                          color: Colors.black,
                           fontSize: 16,
                           decoration: TextDecoration.underline,
                         ),
