@@ -122,12 +122,12 @@ class _SignInState extends State<SignIn> {
                               contentPadding: EdgeInsets.only(top: 15, right: 15),
                               //   hintText: "********",
                               suffixIcon: IconButton(
-    //   onPressed: () => _controller.clear(),
-      icon: Icon(
-                                FontAwesomeIcons.eyeSlash,
-                                color: Colors.grey,
+                                // onPressed: () => _controller.clear(),
+                                icon: Icon(
+                                  FontAwesomeIcons.eyeSlash,
+                                  color: Colors.grey,
+                                ),
                               ),
-                              
                               hintStyle: TextStyle(color: Colors.black87)),
                         )),
                       ],
