@@ -155,7 +155,7 @@ class _SignInState extends State<SignIn> {
                   children: [
                     Text(
                       'Don\'t have an account?',
-                      style: TextStyle(color: color: Colors.white),
+                      style: TextStyle(color: Colors.white),
                     ),
                     SizedBox(
                       width: 5,
