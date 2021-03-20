@@ -122,11 +122,11 @@ class _SignInState extends State<SignIn> {
                               contentPadding: EdgeInsets.only(top: 15, right: 15),
                               //   hintText: "********",
                               suffixIcon: IconButton(
+                                padding: EdgeInsets.only(left: 5, right: 5),
                                 onPressed: () => _toggle(),
                                 icon: Icon(
                                   _obscureText ? FontAwesomeIcons.eyeSlash : FontAwesomeIcons.eye,
                                   color: _obscureText ? Colors.grey : Colors.black,
-                                  padding: EdgeInsets.only(left: 5, right: 5),
                                 ),
                               ),
                               hintStyle: TextStyle(color: Colors.black87)),
