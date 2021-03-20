@@ -126,7 +126,7 @@ class _SignInState extends State<SignIn> {
                                 icon: Icon(
                                   _obscureText ? FontAwesomeIcons.eyeSlash : FontAwesomeIcons.eye,
                                   color: _obscureText ? Colors.grey : Colors.black,
-                                  size: 10,
+                                  size: 30,
                                 ),
                               ),
                               hintStyle: TextStyle(color: Colors.black87)),
