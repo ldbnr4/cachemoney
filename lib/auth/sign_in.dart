@@ -123,10 +123,10 @@ class _SignInState extends State<SignIn> {
                               //   hintText: "********",
                               suffixIcon: IconButton(
                                 onPressed: () => _toggle(),
-                                size: 15,
                                 icon: Icon(
                                   _obscureText ? FontAwesomeIcons.eyeSlash : FontAwesomeIcons.eye,
                                   color: _obscureText ? Colors.grey : Colors.black,
+                                  size: 15,
                                 ),
                               ),
                               hintStyle: TextStyle(color: Colors.black87)),
