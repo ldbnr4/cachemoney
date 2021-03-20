@@ -119,7 +119,7 @@ class _SignInState extends State<SignIn> {
                               enabledBorder: InputBorder.none,
                               errorBorder: InputBorder.none,
                               disabledBorder: InputBorder.none,
-                              contentPadding: EdgeInsets.only(top: 15, right: 10),
+                              contentPadding: EdgeInsets.only(top: 15, right: 1),
                               //   hintText: "********",
                               suffixIcon: IconButton(
                                 onPressed: () => _toggle(),
