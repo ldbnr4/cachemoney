@@ -5,8 +5,8 @@ import 'package:http/http.dart' as http;
 
 class HttpService {
   Future<Portfolio> fetchPortfolio() async {
-    var url = "https://www.yieldwatch.net/api/all/0xc391B88b0304FbF91E134C6C7FB1EDEC98de2AE3?platforms=beefy";
-//   var address = "0xc391B88b0304FbF91E134C6C7FB1EDEC98de2AE3";
+    // var url = "https://www.yieldwatch.net/api/all/0xc391B88b0304FbF91E134C6C7FB1EDEC98de2AE3?platforms=beefy";
+    var address = "0xc391B88b0304FbF91E134C6C7FB1EDEC98de2AE3";
     final response = await http.get(
         // url
         Uri.https('www.yieldwatch.net', "api/all/$address", {

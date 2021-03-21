@@ -43,6 +43,7 @@ class _PortfolioSummaryState extends State<PortfolioSummary> {
             builder: (context, snapshot) {
               //   stderr.writeln('print build');
               if (snapshot.hasData) {
+                Portfolio p = snapshot.data;
                 return Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -55,7 +56,7 @@ class _PortfolioSummaryState extends State<PortfolioSummary> {
                       height: 10,
                     ),
                     Text(
-                      "\$$snapshot.data.totalBalance",
+                      "\$${p.totalBalance}",
                       style: TextStyle(color: Colors.white, fontSize: 30, fontWeight: FontWeight.bold),
                     ),
                     SizedBox(
