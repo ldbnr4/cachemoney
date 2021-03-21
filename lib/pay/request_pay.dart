@@ -1,4 +1,4 @@
-import 'package:cachemoney_app/widgets/google_nav_bar/google_nav_bar.dart';
+import 'package:fiverr_cachemoney/widgets/google_nav_bar/google_nav_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

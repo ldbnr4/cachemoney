@@ -1,5 +1,5 @@
-import 'package:cachemoney_app/auth/sign_up.dart';
-import 'package:cachemoney_app/home/home_screen.dart';
+import 'package:fiverr_cachemoney/auth/sign_up.dart';
+import 'package:fiverr_cachemoney/home/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 

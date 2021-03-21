@@ -1,4 +1,4 @@
-import 'package:cachemoney_app/auth/sign_in.dart';
+import 'package:fiverr_cachemoney/auth/sign_in.dart';
 import 'package:flutter/cupertino.dart';
 import 'dart:async';
 import 'package:flutter/material.dart';

@@ -1,4 +1,4 @@
-package com.example.cachemoney_app
+package com.example.fiverr_cachemoney
 
 import io.flutter.embedding.android.FlutterActivity
 
