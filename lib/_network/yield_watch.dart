@@ -63,7 +63,7 @@ class Portfolio {
     var formatCurrency = NumberFormat.currency(locale: "en_US", symbol: "");
 
     return Portfolio(
-      totalBalance: lp_vault_balance + vault_balance /*+ walletBalance*/,
+      totalBalance: lp_vault_balance + vault_balance + walletBalance,
       //   totalBalance: formatCurrency.format(lp_vault_balance + vault_balance + walletBalance),
       investment: lp_vault_investment + vault_investment,
       gains: lp_vault_gains + vault_gains,
