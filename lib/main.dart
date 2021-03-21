@@ -1,5 +1,5 @@
-import 'package:fiverr_cachemoney/splash/splash_screen.dart';
-import 'package:fiverr_cachemoney/home/home_screen.dart';
+import 'package:cachemoney_app/splash/splash_screen.dart';
+import 'package:cachemoney_app/home/home_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
