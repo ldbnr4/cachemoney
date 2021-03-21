@@ -25,8 +25,8 @@ class _PortfolioSummaryState extends State<PortfolioSummary> {
               //   Colors.black,
               Color(0xff7DCDE1),
               //   Colors.green,
-              //   Colors.teal.shade800,
-              Colors.teal,
+              Colors.teal.shade800,
+              //   Colors.teal,
               //   Colors.amber,
               Colors.amberAccent,
             ],
@@ -39,7 +39,7 @@ class _PortfolioSummaryState extends State<PortfolioSummary> {
           children: [
             Text(
               "Your Portfolio Balance",
-              style: TextStyle(color: Colors.grey.shade400, fontSize: 15),
+              style: TextStyle(color: Colors.white, fontSize: 15),
             ),
             SizedBox(
               height: 10,
@@ -53,7 +53,7 @@ class _PortfolioSummaryState extends State<PortfolioSummary> {
             ),
             Text(
               "Total Profit",
-              style: TextStyle(color: Colors.grey.shade400, fontSize: 15),
+              style: TextStyle(color: Colors.white, fontSize: 15),
             ),
             SizedBox(
               height: 10,
