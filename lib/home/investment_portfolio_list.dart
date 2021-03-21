@@ -106,7 +106,7 @@ class _InvestmentPortfolioListState extends State<InvestmentPortfolioList> {
                             ),
                             subtitle: Text(
                               "Apple Inc",
-                              style: TextStyle(fontSize: 15, color: Colors.grey.shade700),
+                              style: TextStyle(fontSize: 15, color: Colors.grey.shade400),
                             ),
                           ),
                           Padding(
