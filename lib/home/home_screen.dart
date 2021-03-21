@@ -1,6 +1,6 @@
 import 'package:fiverr_cachemoney/pay/request_pay.dart';
 import 'package:fiverr_cachemoney/reports/report.dart';
-import 'package:fiverr_cachemoney/widgets/google_nav_bar/google_nav_bar.dart'
+import 'package:fiverr_cachemoney/widgets/google_nav_bar/google_nav_bar.dart';
 import 'package:fiverr_cachemoney/home/portfolio_summary.dart';;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
