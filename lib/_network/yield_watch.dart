@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:io';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
+import 'package:intl/intl.dart';
 
 class HttpService {
   Future<Portfolio> fetchPortfolio() async {
@@ -31,7 +32,10 @@ class Portfolio {
   final double totalBalance;
   final double investment;
   final double gains;
+  final double wallet;
   final List<dynamic> vaults;
+
+  final formatCurrency = new NumberFormat.currency(locale: "en_US", symbol: "");
 
   Portfolio({this.totalBalance, this.investment, this.gains, this.vaults});
 
@@ -53,10 +57,12 @@ class Portfolio {
     var lp_vault_gains = beefyLPVaultTotals['yield'];
     vaults.addAll(beefyLPVaults['vaults']);
 
+    var walletBalance = json['walletBalance']['totalUSDValues'];
+
     // stderr.writeln('print me');
 
     return Portfolio(
-      totalBalance: lp_vault_balance + vault_balance,
+      totalBalance: formatCurrency.format(lp_vault_balance + vault_balance + walletBalance),
       investment: lp_vault_investment + vault_investment,
       gains: lp_vault_gains + vault_gains,
       vaults: vaults,
