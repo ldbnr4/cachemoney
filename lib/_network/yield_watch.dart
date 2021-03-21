@@ -7,11 +7,11 @@ class HttpService {
   Future<Portfolio> fetchPortfolio() async {
     var url = "https://www.yieldwatch.net/api/all/0xc391B88b0304FbF91E134C6C7FB1EDEC98de2AE3?platforms=beefy";
 //   var address = "0xc391B88b0304FbF91E134C6C7FB1EDEC98de2AE3";
-    final response = await http.get(url
-//       Uri.https('www.yieldwatch.net', "api/all/$address", {
-//     "platforms": "beefy"
-//   })
-        );
+    final response = await http.get(
+        // url
+        Uri.https('www.yieldwatch.net', "api/all/$address", {
+      "platforms": "beefy"
+    }));
 
     if (response.statusCode == 200) {
       // If the server did return a 200 OK response,
