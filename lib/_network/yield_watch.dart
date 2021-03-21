@@ -55,7 +55,8 @@ class Portfolio {
     var lp_vault_gains = beefyLPVaultTotals['yield'];
     vaults.addAll(beefyLPVaults['vaults']);
 
-    var walletBalance = json['walletBalance']['totalUSDValues'];
+    var walletBalanceJson = json['walletBalance']
+    var walletBalance = walletBalanceJson['totalUSDValues'];
 
     // stderr.writeln('print me');
 
