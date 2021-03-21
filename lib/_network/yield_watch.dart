@@ -35,8 +35,6 @@ class Portfolio {
   final double walletBalance;
   final List<dynamic> vaults;
 
-  final formatCurrency = new NumberFormat.currency(locale: "en_US", symbol: "");
-
   Portfolio({this.totalBalance, this.investment, this.gains, this.vaults, this.walletBalance});
 
   factory Portfolio.fromJson(Map<String, dynamic> json) {
@@ -62,7 +60,7 @@ class Portfolio {
     // stderr.writeln('print me');
 
     return Portfolio(
-      totalBalance: this.formatCurrency.format(lp_vault_balance + vault_balance + walletBalance),
+      totalBalance: new NumberFormat.currency(locale: "en_US", symbol: "").formatCurrency.format(lp_vault_balance + vault_balance + walletBalance),
       investment: lp_vault_investment + vault_investment,
       gains: lp_vault_gains + vault_gains,
       vaults: vaults,
