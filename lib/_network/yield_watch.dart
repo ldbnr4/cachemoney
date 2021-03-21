@@ -27,28 +27,26 @@ class Portfolio {
   final double gains;
   final List<dynamic> vaults;
 
-  Portfolio({this.totalBalance,this.investment, this.gains, this.vaults});
+  Portfolio({this.totalBalance, this.investment, this.gains, this.vaults});
 
   factory Portfolio.fromJson(Map<String, dynamic> json) {
-      var beefy = json['BeefyFinance'];
-      var vaults = new List();
+    var beefy = json['BeefyFinance'];
+    var vaults = new List();
 
+    var beefyVaults = beefy['vaults'];
+    var beefyVaultTotals = beefyVaults['totalUSDValues'];
+    var vault_balance = beefyVaultTotals['total'];
+    var vault_investment = beefyVaultTotals['deposit'];
+    var vault_gains = beefyVaultTotals['yield'];
+    vaults.addAll(beefyVaults['vaults']);
 
-      var beefyVaults = beefy['vaults'];
-      var beefyVaultTotals = beefyVaults['totalUSDValues'];
-      var vault_balance = beefyVaultTotals['total'];
-      var vault_investment = beefyVaultTotals['deposit'];
-      var vault_gains = beefyVaultTotals['yield'];
-      vaults.addAll(beefyVaults['vaults']);
+    var beefyLPVaults = beefy['LPVaults'];
+    var beefyLPVaultTotals = beefyLPVaults['totalUSDValues'];
+    var lp_vault_balance = beefyLPVaultTotals['total'];
+    var lp_vault_investment = beefyLPVaultTotals['deposit'];
+    var lp_vault_gains = beefyLPVaultTotals['yield'];
+    vaults.addAll(beefyLPVaults['vaults']);
 
-      var beefyLPVaults = beefy['LPVaults'];
-      var beefyLPVaultTotals = beefyLPVaults['totalUSDValues'];
-      var lp_vault_balance = beefyLPVaultTotals['total'];
-      var lp_vault_investment = beefyLPVaultTotals['deposit'];
-      var lp_vault_gains = beefyLPVaultTotals['yield'];
-      vaults.addAll(beefyLPVaults['vaults'];)
-
-      
     return Portfolio(
       totalBalance: lp_vault_balance + vault_balance,
       investment: lp_vault_investment + vault_investment,
