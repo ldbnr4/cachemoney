@@ -29,7 +29,7 @@ class HttpService {
 }
 
 class Portfolio {
-  final double totalBalance;
+  final String totalBalance;
   final double investment;
   final double gains;
   final double walletBalance;
