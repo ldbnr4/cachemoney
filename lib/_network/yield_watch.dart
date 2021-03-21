@@ -29,7 +29,7 @@ class HttpService {
 }
 
 class Portfolio {
-  final String totalBalance;
+  final double totalBalance;
   final double investment;
   final double gains;
   final double walletBalance;
@@ -62,7 +62,8 @@ class Portfolio {
     var formatCurrency = new NumberFormat.currency(locale: "en_US", symbol: "");
 
     return Portfolio(
-      totalBalance: formatCurrency.format(lp_vault_balance + vault_balance + walletBalance),
+      totalBalance: lp_vault_balance + vault_balance + walletBalance,
+      //   totalBalance: formatCurrency.format(lp_vault_balance + vault_balance + walletBalance),
       investment: lp_vault_investment + vault_investment,
       gains: lp_vault_gains + vault_gains,
       vaults: vaults,
