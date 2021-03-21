@@ -13,7 +13,7 @@ class PortfolioSummary extends StatefulWidget {
 }
 
 class _PortfolioSummaryState extends State<PortfolioSummary> {
-  late Future<Portfolio> futurePortfolio;
+  Future<Portfolio> futurePortfolio;
 
   @override
   void initState() {
