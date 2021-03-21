@@ -24,7 +24,7 @@ class _PortfolioSummaryState extends State<PortfolioSummary> {
             colors: [
               Colors.green,
               Colors.teal,
-              Colors.amber,
+              Colors.amberAccent,
             ],
           ),
           borderRadius: BorderRadius.circular(30)),
