@@ -113,7 +113,7 @@ class _InvestmentPortfolioListState extends State<InvestmentPortfolioList> {
                             padding: const EdgeInsets.only(left: 15, top: 15),
                             child: Text(
                               "Portfolio",
-                              style: TextStyle(color: Colors.grey.shade500, fontSize: 16),
+                              style: TextStyle(color: Colors.grey.shade300, fontSize: 16),
                             ),
                           ),
                           SizedBox(
