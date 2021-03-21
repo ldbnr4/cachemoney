@@ -293,7 +293,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                           ),
                         ),
-                        Divider(height: 0),
+                        Divider(width: 10),
                         Container(
                           height: 160,
                           width: MediaQuery.of(context).size.width * .5,
