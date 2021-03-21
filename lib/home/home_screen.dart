@@ -106,7 +106,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           height: 10,
                         ),
                         Text(
-                          "Monthly Profit",
+                          "Total Profit",
                           style: TextStyle(color: Colors.white, fontSize: 15),
                         ),
                         SizedBox(
