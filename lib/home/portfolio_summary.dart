@@ -14,14 +14,7 @@ class PortfolioSummary extends StatefulWidget {
 }
 
 class _PortfolioSummaryState extends State<PortfolioSummary> {
-  Future<Portfolio> futurePortfolio;
-
-  @override
-  void initState() {
-    super.initState();
-    // stderr.writeln('print init');
-    futurePortfolio = fetchPortfolio();
-  }
+  HttpService portfolioService = HttpService();
 
   @override
   Widget build(BuildContext context) {
@@ -46,7 +39,7 @@ class _PortfolioSummaryState extends State<PortfolioSummary> {
           borderRadius: BorderRadius.circular(30)),
       child: Center(
         child: FutureBuilder<Portfolio>(
-            future: futurePortfolio,
+            future: portfolioService.fetchPortfolio(),
             builder: (context, snapshot) {
               //   stderr.writeln('print build');
               if (snapshot.hasData) {
