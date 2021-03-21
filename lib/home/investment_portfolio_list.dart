@@ -89,7 +89,7 @@ class _InvestmentPortfolioListState extends State<InvestmentPortfolioList> {
                                     Colors.green,
                                     Color(0xff5BC7B1),
                                     Color(0xff7DCDE1),
-                                    Colors.teal,
+                                    Colors.teal800,
                                   ],
                                 ),
                               ),
