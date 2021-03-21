@@ -15,138 +15,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   List<Widget> getList() {
     List<Widget> childs = [];
-    for (var i = 0; i < 10; i++) {
-      childs.add(new SizedBox(
-        height: 10,
-      ));
-      childs.add(
-        new Row(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Expanded(
-              // height: 100,
-              // width: 300,
-              child: ListTile(
-                dense: true,
-                leading: Container(
-                  height: 50,
-                  width: 50,
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                      colors: [
-                        Colors.grey.shade800,
-                        Colors.black,
-                      ],
-                    ),
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  child: Center(
-                    child: Icon(
-                      Icons.view_week,
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
-                title: Text(
-                  "Manulife Cash Fund",
-                  style: TextStyle(
-                      fontSize: 18,
-                      // fontWeight: FontWeight.bold,
-                      color: Colors.white),
-                ),
-                subtitle: Text(
-                  "Mutual Funds",
-                  style: TextStyle(fontSize: 15, color: Colors.grey.shade700),
-                ),
-              ),
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.arrow_drop_up,
-                      color: Colors.white,
-                    ),
-                    Text(
-                      "+ 2.5%",
-                      style: TextStyle(color: Colors.white, fontSize: 15),
-                    ),
-                  ],
-                )
-              ],
-            ),
-          ],
-        ),
-      );
-    }
-    return childs;
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        backgroundColor: Colors.black,
-        appBar: AppBar(
-          backgroundColor: Colors.black,
-          centerTitle: true,
-          leading: GestureDetector(
-            onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) => RequestPay()));
-            },
-            child: Padding(
-              padding: const EdgeInsets.all(5.0),
-              child: Container(
-                height: 30,
-                width: 30,
-                clipBehavior: Clip.antiAlias,
-                decoration: BoxDecoration(color: Color(0xff2C3E40), borderRadius: BorderRadius.circular(10)),
-                child: Center(
-                  child: Icon(FontAwesomeIcons.equals),
-                ),
-              ),
-            ),
-          ),
-          title: Text(
-            "CACHEMONEY",
-            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.orangeAccent),
-          ),
-          actions: [
-            GestureDetector(
-              onTap: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => RequestPay()));
-              },
-              child: Padding(
-                padding: const EdgeInsets.all(5),
-                child: Container(
-                  height: 30,
-                  width: 40,
-                  clipBehavior: Clip.antiAlias,
-                  decoration: BoxDecoration(
-                      // color: Color(0xff2C3E40),
-                      borderRadius: BorderRadius.circular(15)),
-                  child: Center(
-                    child: Image.network("https://writestylesonline.com/wp-content/uploads/2016/08/Follow-These-Steps-for-a-Flawless-Professional-Profile-Picture-1024x1024.jpg"),
-                  ),
-                ),
-              ),
-            ),
-          ],
-        ),
-        body: SingleChildScrollView(
-          physics: AlwaysScrollableScrollPhysics(),
-          child: Padding(
-            padding: EdgeInsets.all(10),
-            child: Column(
-              children: [
+    childs.addAll([
                 Container(
                   height: 200,
                   // width: 120,
@@ -391,7 +260,139 @@ class _HomeScreenState extends State<HomeScreen> {
                     style: TextStyle(color: Colors.grey, fontSize: 16),
                   ),
                 ),
-              ].addAll(getList()),
+              ]);
+    for (var i = 0; i < 10; i++) {
+      childs.add(new SizedBox(
+        height: 10,
+      ));
+      childs.add(
+        new Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Expanded(
+              // height: 100,
+              // width: 300,
+              child: ListTile(
+                dense: true,
+                leading: Container(
+                  height: 50,
+                  width: 50,
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                      colors: [
+                        Colors.grey.shade800,
+                        Colors.black,
+                      ],
+                    ),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Center(
+                    child: Icon(
+                      Icons.view_week,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+                title: Text(
+                  "Manulife Cash Fund",
+                  style: TextStyle(
+                      fontSize: 18,
+                      // fontWeight: FontWeight.bold,
+                      color: Colors.white),
+                ),
+                subtitle: Text(
+                  "Mutual Funds",
+                  style: TextStyle(fontSize: 15, color: Colors.grey.shade700),
+                ),
+              ),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.arrow_drop_up,
+                      color: Colors.white,
+                    ),
+                    Text(
+                      "+ 2.5%",
+                      style: TextStyle(color: Colors.white, fontSize: 15),
+                    ),
+                  ],
+                )
+              ],
+            ),
+          ],
+        ),
+      );
+    }
+    return childs;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: Colors.black,
+        appBar: AppBar(
+          backgroundColor: Colors.black,
+          centerTitle: true,
+          leading: GestureDetector(
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => RequestPay()));
+            },
+            child: Padding(
+              padding: const EdgeInsets.all(5.0),
+              child: Container(
+                height: 30,
+                width: 30,
+                clipBehavior: Clip.antiAlias,
+                decoration: BoxDecoration(color: Color(0xff2C3E40), borderRadius: BorderRadius.circular(10)),
+                child: Center(
+                  child: Icon(FontAwesomeIcons.equals),
+                ),
+              ),
+            ),
+          ),
+          title: Text(
+            "CACHEMONEY",
+            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.orangeAccent),
+          ),
+          actions: [
+            GestureDetector(
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => RequestPay()));
+              },
+              child: Padding(
+                padding: const EdgeInsets.all(5),
+                child: Container(
+                  height: 30,
+                  width: 40,
+                  clipBehavior: Clip.antiAlias,
+                  decoration: BoxDecoration(
+                      // color: Color(0xff2C3E40),
+                      borderRadius: BorderRadius.circular(15)),
+                  child: Center(
+                    child: Image.network("https://writestylesonline.com/wp-content/uploads/2016/08/Follow-These-Steps-for-a-Flawless-Professional-Profile-Picture-1024x1024.jpg"),
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+        body: SingleChildScrollView(
+          physics: AlwaysScrollableScrollPhysics(),
+          child: Padding(
+            padding: EdgeInsets.all(10),
+            child: Column(
+              children: .getList(),
             ),
           ),
         ),
