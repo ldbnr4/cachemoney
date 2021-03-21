@@ -1,3 +1,12 @@
+import 'package:fiverr_cachemoney/pay/request_pay.dart';
+import 'package:fiverr_cachemoney/reports/report.dart';
+import 'package:fiverr_cachemoney/widgets/google_nav_bar/google_nav_bar.dart';
+import 'package:fiverr_cachemoney/home/portfolio_summary.dart';
+import 'package:fiverr_cachemoney/home/investment_portfolio_list.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
 class InvestmentPortfolioList extends StatefulWidget {
   @override
   _InvestmentPortfolioListState createState() => _InvestmentPortfolioListState();
