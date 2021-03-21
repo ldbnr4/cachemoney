@@ -182,7 +182,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       shrinkWrap: true,
                       // physics: AlwaysScrollableScrollPhysics(),
                       scrollDirection: Axis.horizontal,
-                      padding: EdgeInsets.all(20),
+                      padding: EdgeInsets.all(10),
                       children: [
                         Container(
                           height: 160,
@@ -292,6 +292,9 @@ class _HomeScreenState extends State<HomeScreen> {
                               ],
                             ),
                           ),
+                        ),
+                        SizedBox(
+                          height: 10,
                         ),
                         Container(
                           height: 160,
