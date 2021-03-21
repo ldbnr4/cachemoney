@@ -27,7 +27,7 @@ class Portfolio {
   final double gains;
   final List<dynamic> vaults;
 
-  Portfolio({@required this.totalBalance, @required this.investment, @required this.gains, @required this.vaults});
+  Portfolio({this.totalBalance,this.investment, this.gains, this.vaults});
 
   factory Portfolio.fromJson(Map<String, dynamic> json) {
       var beefy = json['BeefyFinance'];
