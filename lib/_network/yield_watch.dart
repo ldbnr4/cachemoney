@@ -66,6 +66,7 @@ class Portfolio {
       investment: lp_vault_investment + vault_investment,
       gains: lp_vault_gains + vault_gains,
       vaults: vaults,
+      wallet: walletBalance,
     );
   }
 }
