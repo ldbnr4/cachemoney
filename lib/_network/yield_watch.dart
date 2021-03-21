@@ -32,12 +32,12 @@ class Portfolio {
   final double totalBalance;
   final double investment;
   final double gains;
-  final double wallet;
+  final double walletBalance;
   final List<dynamic> vaults;
 
   final formatCurrency = new NumberFormat.currency(locale: "en_US", symbol: "");
 
-  Portfolio({this.totalBalance, this.investment, this.gains, this.vaults});
+  Portfolio({this.totalBalance, this.investment, this.gains, this.vaults, this.walletBalance});
 
   factory Portfolio.fromJson(Map<String, dynamic> json) {
     var beefy = json['BeefyFinance'];
@@ -62,11 +62,11 @@ class Portfolio {
     // stderr.writeln('print me');
 
     return Portfolio(
-      totalBalance: formatCurrency.format(lp_vault_balance + vault_balance + walletBalance),
+      totalBalance: this.formatCurrency.format(lp_vault_balance + vault_balance + walletBalance),
       investment: lp_vault_investment + vault_investment,
       gains: lp_vault_gains + vault_gains,
       vaults: vaults,
-      wallet: walletBalance,
+      walletBalance: walletBalance,
     );
   }
 }
