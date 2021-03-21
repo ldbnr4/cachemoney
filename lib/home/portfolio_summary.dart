@@ -38,8 +38,8 @@ class _PortfolioSummaryState extends State<PortfolioSummary> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(
-              "Your Portfolio",
-              style: TextStyle(color: Colors.white, fontSize: 15),
+              "Your Portfolio Balance",
+              style: TextStyle(color: Colors.grey.shade600, fontSize: 15),
             ),
             SizedBox(
               height: 10,
@@ -53,7 +53,7 @@ class _PortfolioSummaryState extends State<PortfolioSummary> {
             ),
             Text(
               "Total Profit",
-              style: TextStyle(color: Colors.white, fontSize: 15),
+              style: TextStyle(color: Colors.grey.shade600, fontSize: 15),
             ),
             SizedBox(
               height: 10,
