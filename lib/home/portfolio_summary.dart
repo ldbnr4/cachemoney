@@ -19,7 +19,7 @@ class _PortfolioSummaryState extends State<PortfolioSummary> {
   @override
   void initState() {
     super.initState();
-    stderr.writeln('print init');
+    // stderr.writeln('print init');
     futurePortfolio = fetchPortfolio();
   }
 
@@ -48,7 +48,7 @@ class _PortfolioSummaryState extends State<PortfolioSummary> {
         child: FutureBuilder<Portfolio>(
             future: futurePortfolio,
             builder: (context, snapshot) {
-              stderr.writeln('print build');
+              //   stderr.writeln('print build');
               if (snapshot.hasData) {
                 return Column(
                   mainAxisAlignment: MainAxisAlignment.center,

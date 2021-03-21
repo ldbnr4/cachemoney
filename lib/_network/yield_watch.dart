@@ -48,7 +48,7 @@ class Portfolio {
     var lp_vault_gains = beefyLPVaultTotals['yield'];
     vaults.addAll(beefyLPVaults['vaults']);
 
-    stderr.writeln('print me');
+    // stderr.writeln('print me');
 
     return Portfolio(
       totalBalance: lp_vault_balance + vault_balance,
