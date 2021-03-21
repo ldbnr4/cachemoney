@@ -183,8 +183,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       // physics: AlwaysScrollableScrollPhysics(),
                       scrollDirection: Axis.horizontal,
                       padding: EdgeInsets.all(10),
-                      children: [
-                        for (var i in [
+                      children: for (var i in [
                           "AAPL",
                           "MSFT",
                           "GOOGL",
@@ -241,7 +240,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                         ),
                                       ),
                                       title: Text(
-                                        "AAPL",
+                                        i,
                                         style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
                                       ),
                                       subtitle: Text(
@@ -302,8 +301,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 ),
                               ),
                             ),
-                          }
-                      ],
+                          },
                     ),
                   ),
                 ),
