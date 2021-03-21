@@ -22,6 +22,8 @@ class _PortfolioSummaryState extends State<PortfolioSummary> {
             end: const FractionalOffset(0.0, 0.0),
             // stops: [0.2, 0.5, 0.7, 0.9],
             colors: [
+              Colors.black,
+              Colors.teal.shade800,
               Colors.green,
               Colors.teal,
               Colors.amberAccent,
