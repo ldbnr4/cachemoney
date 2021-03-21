@@ -62,7 +62,7 @@ class _PortfolioSummaryState extends State<PortfolioSummary> {
                       height: 10,
                     ),
                     Text(
-                      "\$$snapshot.data!.totalBalance",
+                      "\$$snapshot.data.totalBalance",
                       style: TextStyle(color: Colors.white, fontSize: 30, fontWeight: FontWeight.bold),
                     ),
                     SizedBox(
