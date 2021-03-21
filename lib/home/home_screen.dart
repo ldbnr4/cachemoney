@@ -22,6 +22,23 @@ class _HomeScreenState extends State<HomeScreen> {
       SizedBox(
         height: 10,
       ),
+      Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Text(
+            "Portfolio",
+            style: TextStyle(color: Colors.grey.shade400, fontSize: 15),
+          ),
+          Text(
+            "View All",
+            style: TextStyle(color: Colors.grey.shade300, fontSize: 18),
+          ),
+        ],
+      ),
+      SizedBox(
+        height: 10,
+      ),
       InvestmentPortfolioList(),
       SizedBox(
         height: 10,
