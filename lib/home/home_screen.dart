@@ -3,6 +3,7 @@ import 'package:fiverr_cachemoney/reports/report.dart';
 import 'package:fiverr_cachemoney/widgets/google_nav_bar/google_nav_bar.dart';
 import 'package:fiverr_cachemoney/home/portfolio_summary.dart';
 import 'package:fiverr_cachemoney/home/investment_portfolio_list.dart';
+import 'package:fiverr_cachemoney/home/transactions.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -14,23 +15,6 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   int _selectedIndex = 0;
-
-  List<Widget> getList() {
-    List<Widget> childs = [];
-    childs.addAll([
-      PortfolioSummary(),
-      SizedBox(
-        height: 10,
-      ),
-      InvestmentPortfolioList(),
-      SizedBox(
-        height: 10,
-      ),
-      Transactions()
-    ]);
-    
-    return childs;
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -88,7 +72,17 @@ class _HomeScreenState extends State<HomeScreen> {
           child: Padding(
             padding: EdgeInsets.all(10),
             child: Column(
-              children: getList(),
+              children: [
+                PortfolioSummary(),
+                SizedBox(
+                  height: 10,
+                ),
+                InvestmentPortfolioList(),
+                SizedBox(
+                  height: 10,
+                ),
+                Transactions()
+              ],
             ),
           ),
         ),
