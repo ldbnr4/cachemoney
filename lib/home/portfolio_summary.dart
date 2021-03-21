@@ -18,8 +18,8 @@ class _PortfolioSummaryState extends State<PortfolioSummary> {
       // width: 120,
       decoration: BoxDecoration(
           gradient: LinearGradient(
-            begin: const FractionalOffset(1.0, 0.0),
-            end: const FractionalOffset(0.0, 1.0),
+            begin: const FractionalOffset(1.0, 1.0),
+            end: const FractionalOffset(0.0, 0.0),
             // stops: [0.2, 0.5, 0.7, 0.9],
             colors: [
               Colors.green,
