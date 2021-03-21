@@ -1,4 +1,5 @@
 import 'package:fiverr_cachemoney/auth/sign_in.dart';
+import 'package:fiverr_cachemoney/home/home_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'dart:async';
 import 'package:flutter/material.dart';
@@ -12,7 +13,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 5), () => Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (BuildContext context) => SignIn())));
+    Timer(Duration(seconds: 5), () => Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (BuildContext context) => HomeScreen() /*SignIn()*/)));
   }
 
   @override
