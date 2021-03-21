@@ -95,6 +95,6 @@ class _TransactionsState extends State<Transactions> {
         ),
       );
     }
-    return Container(children: childs);
+    return Column(children: childs);
   }
 }
