@@ -88,7 +88,7 @@ class _InvestmentPortfolioListState extends State<InvestmentPortfolioList> {
                                   colors: [
                                     Color(0xff8AF2FD),
                                     Color(0xff5BC7B1),
-                                    // Color(0xff7DCDE1),
+                                    Color(0xff7DCDE1),
                                     Color(0xff148399),
                                   ],
                                 ),
@@ -112,7 +112,7 @@ class _InvestmentPortfolioListState extends State<InvestmentPortfolioList> {
                           Padding(
                             padding: const EdgeInsets.only(left: 15, top: 15),
                             child: Text(
-                              "Portfolio",
+                              "Balance",
                               style: TextStyle(color: Colors.grey.shade300, fontSize: 16),
                             ),
                           ),
