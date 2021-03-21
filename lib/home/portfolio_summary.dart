@@ -13,7 +13,7 @@ class PortfolioSummary extends StatefulWidget {
 }
 
 class _PortfolioSummaryState extends State<PortfolioSummary> {
-  Future<Portfolio> futurePortfolio;
+  late Future<Portfolio> futurePortfolio;
 
   @override
   void initState() {
@@ -43,7 +43,7 @@ class _PortfolioSummaryState extends State<PortfolioSummary> {
           ),
           borderRadius: BorderRadius.circular(30)),
       child: Center(
-        child: FutureBuilder<Porfolio>(
+        child: FutureBuilder<Portfolio>(
             future: futurePortfolio,
             builder: (context, snapshot) {
               if (snapshot.hasData) {
