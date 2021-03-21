@@ -10,7 +10,7 @@ class PortfolioSummary extends StatefulWidget {
   _PortfolioSummaryState createState() => _PortfolioSummaryState();
 }
 
-class _PortfolioSummaryState extends State<HomeScreen> {
+class _PortfolioSummaryState extends State<PortfolioSummary> {
   @override
   Widget build(BuildContext context) {
     return Container(
