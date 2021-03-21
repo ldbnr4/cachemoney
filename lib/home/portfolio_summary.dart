@@ -24,7 +24,6 @@ class _PortfolioSummaryState extends State<PortfolioSummary> {
             colors: [
               Colors.green,
               Colors.teal,
-              Colors.lime,
               Colors.amber,
               Colors.teal,
             ],
