@@ -23,9 +23,9 @@ class _PortfolioSummaryState extends State<PortfolioSummary> {
             // stops: [0.2, 0.5, 0.7, 0.9],
             colors: [
               Colors.black,
-              Colors.green,
+              //   Colors.green,
               //   Colors.teal.shade800,
-              //   Colors.teal,
+              Colors.teal,
               Color(0xff7DCDE1),
               Colors.amber,
               //   Colors.amberAccent,
