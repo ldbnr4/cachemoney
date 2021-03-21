@@ -179,18 +179,18 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Container(
                     height: 180,
                     child: ListView(
-                      shrinkWrap: true,
-                      // physics: AlwaysScrollableScrollPhysics(),
-                      scrollDirection: Axis.horizontal,
-                      padding: EdgeInsets.all(10),
-                      children: for (var i in [
-                          "AAPL",
-                          "MSFT",
-                          "GOOGL",
-                          "FB",
-                          "AMZN"
-                        ])
-                          {
+                        shrinkWrap: true,
+                        // physics: AlwaysScrollableScrollPhysics(),
+                        scrollDirection: Axis.horizontal,
+                        padding: EdgeInsets.all(10),
+                        children: <Widget>[
+                          for (var i in [
+                            "AAPL",
+                            "MSFT",
+                            "GOOGL",
+                            "FB",
+                            "AMZN"
+                          ])
                             Container(
                               margin: EdgeInsets.only(right: 20.0),
                               height: 160,
@@ -301,8 +301,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 ),
                               ),
                             ),
-                          },
-                    ),
+                        ]),
                   ),
                 ),
                 SizedBox(
