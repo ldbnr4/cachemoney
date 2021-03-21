@@ -61,7 +61,7 @@ class _InvestmentPortfolioListState extends State<InvestmentPortfolioList> {
                           begin: Alignment.topLeft,
                           end: Alignment.bottomRight,
                           colors: [
-                            Colors.grey.shade800,
+                            Colors.amberAccent,
                             Colors.black,
                           ],
                         ),
