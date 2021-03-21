@@ -5,7 +5,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class PortfolioSummary extends StatelessWidget {
+class PortfolioSummary extends StatefulWidget {
+  @override
+  _PortfolioSummaryState createState() => _PortfolioSummaryState();
+}
+
+class _PortfolioSummaryState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
